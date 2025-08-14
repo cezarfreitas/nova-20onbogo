@@ -4,18 +4,23 @@ FROM node:20-alpine
 # Diretório de trabalho
 WORKDIR /app
 
-# Instalar dependências
+# Instalar dependências (apenas as necessárias para build)
 COPY package*.json ./
 RUN npm ci
 
-# Copiar código
+# Copiar código da aplicação
 COPY . .
 
-# Build
+# Build do SvelteKit
 RUN npm run build
 
-# Porta 80
+# Porta 80 no container
 EXPOSE 80
 
-# Iniciar
-CMD ["sh", "-c", "export PORT=80 && export HOST=0.0.0.0 && node build"]
+# Definir variáveis de ambiente fixas
+ENV PORT=80
+ENV HOST=0.0.0.0
+ENV NODE_ENV=production
+
+# Iniciar aplicação com adapter-node
+CMD ["node", "build/index.js"]
