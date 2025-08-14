@@ -411,60 +411,76 @@
 			<!-- Row 1 -->
 			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
 				<img
-					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fa099ce9a3ce740febf1b3044c2580285?format=webp&width=400"
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fa099ce9a3ce740febf1b3044c2580285?format=webp&width=400&quality=80"
 					alt="Coleção Onbongo - Look Streetwear"
 					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+					loading="lazy"
+					decoding="async"
 				/>
 			</div>
 			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
 				<img
-					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2F48e791eeed6d4443b12b0a089eb3a019?format=webp&width=400"
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2F48e791eeed6d4443b12b0a089eb3a019?format=webp&width=400&quality=80"
 					alt="Coleção Onbongo - Trio Urbano"
 					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+					loading="lazy"
+					decoding="async"
 				/>
 			</div>
 			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
 				<img
-					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fe483117522274031aec388eb26efa263?format=webp&width=400"
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fe483117522274031aec388eb26efa263?format=webp&width=400&quality=80"
 					alt="Coleção Onbongo - Street Style"
 					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+					loading="lazy"
+					decoding="async"
 				/>
 			</div>
 			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
 				<img
-					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2F381e0b268ba64f6d863d2ffc31efe613?format=webp&width=400"
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2F381e0b268ba64f6d863d2ffc31efe613?format=webp&width=400&quality=80"
 					alt="Coleção Onbongo - Camiseta Amarela"
 					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+					loading="lazy"
+					decoding="async"
 				/>
 			</div>
 
 			<!-- Row 2 -->
 			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
 				<img
-					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2F702cecb9d1624205b9743c250391fb28?format=webp&width=400"
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2F702cecb9d1624205b9743c250391fb28?format=webp&width=400&quality=80"
 					alt="Coleção Onbongo - Look Colorido"
 					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+					loading="lazy"
+					decoding="async"
 				/>
 			</div>
 			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
 				<img
-					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fc870b8e2e0a5441b820c6270decb2a87?format=webp&width=400"
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fc870b8e2e0a5441b820c6270decb2a87?format=webp&width=400&quality=80"
 					alt="Coleção Onbongo - Style Urbano"
 					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+					loading="lazy"
+					decoding="async"
 				/>
 			</div>
 			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
 				<img
-					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fffc7286166654cc88333a15ec5d2a758?format=webp&width=400"
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fffc7286166654cc88333a15ec5d2a758?format=webp&width=400&quality=80"
 					alt="Coleção Onbongo - Moletom Azul"
 					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+					loading="lazy"
+					decoding="async"
 				/>
 			</div>
 			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
 				<img
-					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2F91d49d8c2fe24f8794eb74eb6d4d66ca?format=webp&width=400"
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2F91d49d8c2fe24f8794eb74eb6d4d66ca?format=webp&width=400&quality=80"
 					alt="Coleção Onbongo - T-shirt Vermelha"
 					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+					loading="lazy"
+					decoding="async"
 				/>
 			</div>
 		</div>
