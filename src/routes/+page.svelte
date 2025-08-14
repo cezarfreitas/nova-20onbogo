@@ -239,7 +239,7 @@
 						<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
 							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
 						</svg>
-						<span>Começar Agora!</span>
+						<span>Come��ar Agora!</span>
 						<svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
 						</svg>
@@ -596,7 +596,7 @@
 </section>
 
 <!-- Footer Section -->
-<footer class="bg-gray-900 text-white py-16 px-4 sm:px-6 lg:px-8">
+<footer class="bg-black text-white py-16 px-4 sm:px-6 lg:px-8">
 	<div class="max-w-7xl mx-auto">
 		<div class="text-center mb-12">
 			<!-- Logo -->
