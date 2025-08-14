@@ -351,6 +351,96 @@
 	</div>
 </section>
 
+<!-- Brand History Section -->
+<section class="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
+	<div class="max-w-7xl mx-auto">
+		<div class="grid lg:grid-cols-2 gap-16 items-center">
+			<!-- Left Side - History Content -->
+			<div>
+				<h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-black mb-6 leading-tight">
+					História da Marca
+					<span class="text-onbongo-orange block">Onbongo</span>
+				</h2>
+
+				<div class="space-y-6 text-gray-700 leading-relaxed">
+					<p class="text-lg">
+						Nascida nas ruas do Brasil em 1993, a Onbongo chegou ao país para revolucionar o streetwear nacional.
+						Mais que uma marca, somos um movimento cultural que une música, arte urbana e moda autêntica.
+					</p>
+
+					<p class="text-lg">
+						De grafites nas paredes às passarelas, nossa essência permanece a mesma: criar produtos que expressam a
+						identidade e atitude da nova geração. Cada peça conta uma história, cada design carrega a alma das ruas.
+					</p>
+				</div>
+
+				<!-- Statistics -->
+				<div class="grid grid-cols-2 gap-8 mt-12">
+					<div class="text-center">
+						<div class="text-4xl md:text-5xl font-black text-onbongo-orange mb-2">30+</div>
+						<div class="text-gray-600 font-semibold text-sm uppercase tracking-wide">Anos de História</div>
+					</div>
+					<div class="text-center">
+						<div class="text-4xl md:text-5xl font-black text-onbongo-orange mb-2">500+</div>
+						<div class="text-gray-600 font-semibold text-sm uppercase tracking-wide">Lojistas Parceiros</div>
+					</div>
+					<div class="text-center">
+						<div class="text-4xl md:text-5xl font-black text-onbongo-orange mb-2">1M+</div>
+						<div class="text-gray-600 font-semibold text-sm uppercase tracking-wide">Clientes Satisfeitos</div>
+					</div>
+					<div class="text-center">
+						<div class="text-4xl md:text-5xl font-black text-onbongo-orange mb-2">#1</div>
+						<div class="text-gray-600 font-semibold text-sm uppercase tracking-wide">Marca de Streetwear</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Right Side - Image -->
+			<div class="relative">
+				<div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+					<img
+						src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fbda72524d7f1493989088bc2b7d3ac1a?format=webp&width=600"
+						alt="História da Marca Onbongo"
+						class="w-full h-full object-cover"
+					/>
+				</div>
+
+				<!-- Quote Badge -->
+				<div class="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl border border-gray-100 max-w-sm">
+					<div class="text-sm text-gray-600 italic leading-relaxed">
+						"Desde 1993, conectando gerações através do streetwear autêntico"
+					</div>
+					<div class="mt-2 text-xs text-onbongo-orange font-semibold uppercase tracking-wide">
+						Fundação Onbongo
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bottom CTA -->
+		<div class="mt-20 text-center">
+			<div class="bg-black rounded-3xl p-12 text-white">
+				<h3 class="text-3xl md:text-4xl font-black mb-4">
+					Faça Parte da Nossa História
+				</h3>
+				<p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
+					Junte-se aos milhares de lojistas que já fazem parte da família Onbongo e levam
+					o melhor do streetwear brasileiro para seus clientes.
+				</p>
+				<button class="bg-onbongo-orange hover:bg-onbongo-orange-dark text-white font-bold py-4 px-8 rounded-xl transition-all duration-200 hover:scale-105 shadow-lg inline-flex items-center gap-3">
+					<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+						<path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+					</svg>
+					Começar Minha Jornada
+					<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+					</svg>
+				</button>
+			</div>
+		</div>
+	</div>
+</section>
+
 <style>
 	/* Custom animations for floating elements */
 	@keyframes float {
