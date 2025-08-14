@@ -348,27 +348,6 @@
 			</button>
 		</div>
 
-		<!-- Bottom Stats -->
-		<div class="mt-16 pt-12 border-t border-gray-200">
-			<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-				<div>
-					<div class="text-3xl font-black text-onbongo-orange mb-2">1000+</div>
-					<div class="text-gray-600 font-medium">Lojistas Ativos</div>
-				</div>
-				<div>
-					<div class="text-3xl font-black text-onbongo-orange mb-2">100k+</div>
-					<div class="text-gray-600 font-medium">Produtos</div>
-				</div>
-				<div>
-					<div class="text-3xl font-black text-onbongo-orange mb-2">30+</div>
-					<div class="text-gray-600 font-medium">Anos de Mercado</div>
-				</div>
-				<div>
-					<div class="text-3xl font-black text-onbongo-orange mb-2">24/7</div>
-					<div class="text-gray-600 font-medium">Suporte</div>
-				</div>
-			</div>
-		</div>
 	</div>
 </section>
 
