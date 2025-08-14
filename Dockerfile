@@ -19,8 +19,8 @@ RUN npm run build
 # Production stage
 FROM node:18-alpine AS production
 
-# Install security updates
-RUN apk update && apk upgrade && apk add --no-cache dumb-init
+# Install security updates and required tools
+RUN apk update && apk upgrade && apk add --no-cache dumb-init curl
 
 # Create app user for security
 RUN addgroup -g 1001 -S nodejs && adduser -S svelte -u 1001
@@ -31,7 +31,7 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Install production dependencies only
+# Install production dependencies only (exclude devDependencies)
 RUN npm ci --omit=dev --no-audit --no-fund && npm cache clean --force
 
 # Copy built application from builder stage
