@@ -257,6 +257,133 @@
 	</div>
 </section>
 
+<!-- Gallery Section -->
+<section class="bg-white py-20 px-4 sm:px-6 lg:px-8">
+	<div class="max-w-7xl mx-auto">
+		<!-- Section Header -->
+		<div class="text-center mb-16">
+			<h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-black mb-4">
+				Coleções Exclusivas
+				<span class="text-onbongo-orange block">Onbongo</span>
+			</h2>
+			<p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+				Descubra as coleções oficiais Onbongo, com design autêntico e qualidade premium.
+				Produtos únicos que valorizam sua loja e encantam seus clientes.
+			</p>
+		</div>
+
+		<!-- Gallery Grid -->
+		<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+			<!-- Row 1 -->
+			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
+				<img
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2F2a8173e4598e4694bc05e53737a0cdd3?format=webp&width=400"
+					alt="Coleção Onbongo 1"
+					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+				/>
+			</div>
+			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
+				<img
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fa86590b89c5940fab8fb45b82f272ac6?format=webp&width=400"
+					alt="Coleção Onbongo 2"
+					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+				/>
+			</div>
+			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
+				<div class="w-full h-full bg-gradient-to-br from-onbongo-orange/20 to-onbongo-orange/40 flex items-center justify-center">
+					<div class="text-center p-4">
+						<div class="text-onbongo-orange text-4xl font-black mb-2">+100k</div>
+						<div class="text-black font-semibold">Produtos Disponíveis</div>
+					</div>
+				</div>
+			</div>
+			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
+				<div class="w-full h-full bg-black flex items-center justify-center">
+					<div class="text-center p-4">
+						<svg class="w-12 h-12 text-onbongo-orange mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+						<div class="text-white font-semibold text-sm">Qualidade Garantida</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Row 2 -->
+			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
+				<div class="w-full h-full bg-gradient-to-br from-black to-gray-800 flex items-center justify-center">
+					<div class="text-center p-4">
+						<div class="text-onbongo-orange text-3xl font-black mb-1">30+</div>
+						<div class="text-white font-semibold text-sm">Anos de História</div>
+					</div>
+				</div>
+			</div>
+			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
+				<div class="w-full h-full bg-onbongo-orange flex items-center justify-center">
+					<div class="text-center p-4">
+						<svg class="w-12 h-12 text-white mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+						</svg>
+						<div class="text-white font-semibold text-sm">Suporte Total</div>
+					</div>
+				</div>
+			</div>
+			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
+				<div class="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+					<div class="text-center p-4">
+						<svg class="w-12 h-12 text-onbongo-orange mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+						</svg>
+						<div class="text-black font-semibold text-sm">Pronta Entrega</div>
+					</div>
+				</div>
+			</div>
+			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
+				<div class="w-full h-full bg-gradient-to-br from-onbongo-orange to-onbongo-orange-dark flex items-center justify-center">
+					<div class="text-center p-4">
+						<div class="text-white text-2xl font-black mb-1">ONBONGO</div>
+						<div class="text-white/90 font-medium text-xs">Streetwear Oficial</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- CTA Button -->
+		<div class="text-center">
+			<button class="bg-onbongo-orange hover:bg-onbongo-orange-dark text-white font-bold py-4 px-8 rounded-xl transition-all duration-200 hover:scale-105 shadow-lg inline-flex items-center gap-3">
+				<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+					<path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+				</svg>
+				Quero Ser Lojista Oficial
+				<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+				</svg>
+			</button>
+		</div>
+
+		<!-- Bottom Stats -->
+		<div class="mt-16 pt-12 border-t border-gray-200">
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+				<div>
+					<div class="text-3xl font-black text-onbongo-orange mb-2">1000+</div>
+					<div class="text-gray-600 font-medium">Lojistas Ativos</div>
+				</div>
+				<div>
+					<div class="text-3xl font-black text-onbongo-orange mb-2">100k+</div>
+					<div class="text-gray-600 font-medium">Produtos</div>
+				</div>
+				<div>
+					<div class="text-3xl font-black text-onbongo-orange mb-2">30+</div>
+					<div class="text-gray-600 font-medium">Anos de Mercado</div>
+				</div>
+				<div>
+					<div class="text-3xl font-black text-onbongo-orange mb-2">24/7</div>
+					<div class="text-gray-600 font-medium">Suporte</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <style>
 	/* Custom animations for floating elements */
 	@keyframes float {
