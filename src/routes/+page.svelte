@@ -144,9 +144,11 @@
 	<div class="absolute inset-0">
 		<!-- Hero background image -->
 		<img
-			src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fa86590b89c5940fab8fb45b82f272ac6?format=webp&width=1920"
+			src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fa86590b89c5940fab8fb45b82f272ac6?format=webp&width=1920&quality=85"
 			alt="Ecko streetwear model"
 			class="absolute inset-0 w-full h-full object-cover"
+			fetchpriority="high"
+			decoding="async"
 		/>
 
 		<!-- Black overlay for dramatic effect and readability -->
