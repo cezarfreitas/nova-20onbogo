@@ -9,24 +9,16 @@
 
 <main class="relative min-h-screen overflow-hidden">
 	<!-- Background with red gradient and pattern -->
-	<div class="absolute inset-0 bg-gradient-to-br from-ecko-red via-ecko-red to-ecko-red-dark">
-		<!-- Abstract background pattern -->
-		<div class="absolute inset-0 opacity-20">
-			<svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
-				<g fill="none" stroke="currentColor" stroke-width="2" class="text-white/30">
-					<path d="M100 200 Q300 100 500 200 T900 200" />
-					<path d="M200 300 Q400 200 600 300 T1000 300" />
-					<path d="M300 400 Q500 300 700 400 T1100 400" />
-					<path d="M0 500 Q200 400 400 500 T800 500" />
-					<path d="M150 600 Q350 500 550 600 T950 600" />
-					<path d="M50 700 Q250 600 450 700 T850 700" />
-					<path d="M1200 100 Q1400 0 1600 100 T2000 100" />
-					<path d="M1300 200 Q1500 100 1700 200 T2100 200" />
-					<path d="M1100 300 Q1300 200 1500 300 T1900 300" />
-					<path d="M1250 400 Q1450 300 1650 400 T2050 400" />
-				</g>
-			</svg>
-		</div>
+	<div class="absolute inset-0">
+		<!-- Hero background image -->
+		<img
+			src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fa86590b89c5940fab8fb45b82f272ac6?format=webp&width=1920"
+			alt="Ecko streetwear model"
+			class="absolute inset-0 w-full h-full object-cover"
+		/>
+
+		<!-- Red overlay to maintain brand color and readability -->
+		<div class="absolute inset-0 bg-gradient-to-br from-ecko-red/85 via-ecko-red/75 to-ecko-red-dark/85"></div>
 		
 		<!-- Ecko logo pattern scattered -->
 		<div class="absolute inset-0 opacity-10">
