@@ -1,8 +1,0 @@
-node_modules
-.git
-.svelte-kit
-build
-*.md
-.env*
-*.log
-.DS_Store
