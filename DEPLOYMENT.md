@@ -28,7 +28,14 @@ cp .env.production.template .env.production
 npm install
 ```
 
-### 4. Teste o build (Opcional)
+### 4. Corrigir dependências (Se necessário)
+```bash
+# Se encontrar problemas de dependências
+chmod +x fix-deps.sh
+./fix-deps.sh
+```
+
+### 5. Teste o build (Opcional)
 ```bash
 # Testa diferentes estratégias de build
 chmod +x build-test.sh
