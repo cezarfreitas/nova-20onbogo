@@ -309,7 +309,7 @@
 					</p>
 				</div>
 
-				<form class="space-y-6">
+				<form class="space-y-4 sm:space-y-6">
 					<!-- Nome Completo -->
 					<div class="space-y-2">
 						<label for="nome" class="block text-white font-semibold text-sm">Nome Completo *</label>
@@ -318,7 +318,9 @@
 							id="nome"
 							placeholder="Seu nome completo"
 							required
-							class="w-full px-4 py-3 rounded-xl border-0 focus:outline-none focus:ring-3 focus:ring-white/30 text-gray-900 placeholder:text-gray-500 shadow-inner"
+							class="w-full px-4 py-4 rounded-xl border-0 focus:outline-none focus:ring-3 focus:ring-white/30 text-gray-900 placeholder:text-gray-500 shadow-inner text-base touch-manipulation"
+							autocomplete="name"
+							inputmode="text"
 						/>
 					</div>
 
@@ -331,7 +333,9 @@
 							id="whatsapp"
 							placeholder="(11) 99999-9999"
 							required
-							class="w-full px-4 py-3 rounded-xl border-0 focus:outline-none focus:ring-3 focus:ring-white/30 text-gray-900 placeholder:text-gray-500 shadow-inner"
+							class="w-full px-4 py-4 rounded-xl border-0 focus:outline-none focus:ring-3 focus:ring-white/30 text-gray-900 placeholder:text-gray-500 shadow-inner text-base touch-manipulation"
+							autocomplete="tel"
+							inputmode="tel"
 						/>
 					</div>
 
@@ -340,12 +344,12 @@
 					<div class="space-y-4">
 						<label class="block text-white font-semibold text-sm">Tipo de Cadastro *</label>
 						<div class="space-y-3">
-							<label class="flex items-center gap-3 p-3 rounded-xl bg-white/10 cursor-pointer hover:bg-white/20 transition-colors">
+							<label class="flex items-center gap-3 p-4 rounded-xl bg-white/10 cursor-pointer hover:bg-white/20 transition-colors touch-manipulation">
 								<input
 									type="radio"
 									name="tipo_cadastro"
 									value="lojista"
-									class="w-5 h-5 text-onbongo-orange focus:ring-white/30 focus:ring-2"
+									class="w-6 h-6 text-onbongo-orange focus:ring-white/30 focus:ring-2"
 									required
 								/>
 								<div>
@@ -353,12 +357,12 @@
 									<p class="text-white/70 text-xs">Tenho CNPJ e quero revender</p>
 								</div>
 							</label>
-							<label class="flex items-center gap-3 p-3 rounded-xl bg-white/10 cursor-pointer hover:bg-white/20 transition-colors">
+							<label class="flex items-center gap-3 p-4 rounded-xl bg-white/10 cursor-pointer hover:bg-white/20 transition-colors touch-manipulation">
 								<input
 									type="radio"
 									name="tipo_cadastro"
 									value="consumidor"
-									class="w-5 h-5 text-onbongo-orange focus:ring-white/30 focus:ring-2"
+									class="w-6 h-6 text-onbongo-orange focus:ring-white/30 focus:ring-2"
 									required
 								/>
 								<div>
@@ -372,7 +376,7 @@
 					<!-- Submit Button -->
 					<button
 						type="submit"
-						class="w-full bg-black text-white font-bold py-4 px-6 rounded-xl hover:bg-gray-900 active:scale-95 transition-all duration-200 flex items-center justify-center gap-3 shadow-xl mt-8"
+						class="w-full bg-black text-white font-bold py-4 sm:py-5 px-6 rounded-xl hover:bg-gray-900 active:scale-95 transition-all duration-200 flex items-center justify-center gap-3 shadow-xl mt-6 sm:mt-8 text-base sm:text-lg touch-manipulation"
 					>
 						<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
 							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
