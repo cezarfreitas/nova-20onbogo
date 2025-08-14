@@ -441,6 +441,160 @@
 	</div>
 </section>
 
+<!-- FAQ Section -->
+<section class="bg-white py-20 px-4 sm:px-6 lg:px-8">
+	<div class="max-w-4xl mx-auto">
+		<!-- Section Header -->
+		<div class="text-center mb-16">
+			<h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-black mb-4">
+				Perguntas Frequentes
+			</h2>
+			<p class="text-lg text-gray-600 max-w-2xl mx-auto">
+				Tire suas dúvidas sobre a parceria com a Onbongo
+			</p>
+		</div>
+
+		<!-- FAQ List -->
+		<div class="space-y-4 mb-12">
+			<!-- FAQ Item 1 -->
+			<details class="group bg-gray-50 rounded-2xl">
+				<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+					<h3 class="font-semibold text-lg text-gray-900">
+						Os produtos são oficiais da marca Onbongo?
+					</h3>
+					<svg
+						class="w-5 h-5 text-onbongo-orange transition-transform group-open:rotate-180"
+						fill="none"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+					</svg>
+				</summary>
+				<div class="px-6 pb-6">
+					<p class="text-gray-600 leading-relaxed">
+						Sim, todos os produtos são 100% oficiais da marca Onbongo. Trabalhamos diretamente com a
+						empresa e garantimos a autenticidade de todas as peças. Cada produto possui etiquetas
+						originais e certificado de qualidade.
+					</p>
+				</div>
+			</details>
+
+			<!-- FAQ Item 2 -->
+			<details class="group bg-gray-50 rounded-2xl">
+				<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+					<h3 class="font-semibold text-lg text-gray-900">
+						Posso visitar o showroom em São Paulo?
+					</h3>
+					<svg
+						class="w-5 h-5 text-onbongo-orange transition-transform group-open:rotate-180"
+						fill="none"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+					</svg>
+				</summary>
+				<div class="px-6 pb-6">
+					<p class="text-gray-600 leading-relaxed">
+						Claro! Nosso showroom está localizado em São Paulo e você pode agendar uma visita para
+						conhecer pessoalmente toda a coleção. Entre em contato conosco pelo WhatsApp para
+						agendar o melhor horário para sua visita.
+					</p>
+				</div>
+			</details>
+
+			<!-- FAQ Item 3 -->
+			<details class="group bg-gray-50 rounded-2xl">
+				<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+					<h3 class="font-semibold text-lg text-gray-900">
+						Existe um valor de pedido mínimo?
+					</h3>
+					<svg
+						class="w-5 h-5 text-onbongo-orange transition-transform group-open:rotate-180"
+						fill="none"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+					</svg>
+				</summary>
+				<div class="px-6 pb-6">
+					<p class="text-gray-600 leading-relaxed">
+						Sim, trabalhamos com um pedido mínimo para lojistas que varia conforme a região e o tipo
+						de parceria. Nossa equipe comercial irá informar os valores específicos durante o
+						processo de cadastro, sempre buscando as melhores condições para seu negócio.
+					</p>
+				</div>
+			</details>
+
+			<!-- FAQ Item 4 -->
+			<details class="group bg-gray-50 rounded-2xl">
+				<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+					<h3 class="font-semibold text-lg text-gray-900">
+						Quais as formas de pagamento?
+					</h3>
+					<svg
+						class="w-5 h-5 text-onbongo-orange transition-transform group-open:rotate-180"
+						fill="none"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+					</svg>
+				</summary>
+				<div class="px-6 pb-6">
+					<p class="text-gray-600 leading-relaxed">
+						Oferecemos diversas formas de pagamento para facilitar suas compras: à vista com desconto,
+						parcelamento no cartão de crédito, boleto bancário e transferência PIX. Para lojistas
+						parceiros, também disponibilizamos condições especiais de prazo de pagamento.
+					</p>
+				</div>
+			</details>
+
+			<!-- FAQ Item 5 -->
+			<details class="group bg-gray-50 rounded-2xl">
+				<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+					<h3 class="font-semibold text-lg text-gray-900">
+						Como funciona a entrega dos produtos?
+					</h3>
+					<svg
+						class="w-5 h-5 text-onbongo-orange transition-transform group-open:rotate-180"
+						fill="none"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+					</svg>
+				</summary>
+				<div class="px-6 pb-6">
+					<p class="text-gray-600 leading-relaxed">
+						Realizamos entregas para todo o Brasil através de transportadoras parceiras. O prazo
+						varia de 3 a 10 dias úteis conforme a região. Para pedidos acima de determinado valor,
+						o frete é gratuito. Você recebe o código de rastreamento assim que o pedido é despachado.
+					</p>
+				</div>
+			</details>
+		</div>
+
+		<!-- Bottom CTA -->
+		<div class="text-center">
+			<p class="text-gray-600 mb-6 text-lg">
+				Ainda tem dúvidas? Entre em contato conosco!
+			</p>
+			<button class="bg-onbongo-orange hover:bg-onbongo-orange-dark text-white font-bold py-4 px-8 rounded-xl transition-all duration-200 hover:scale-105 shadow-lg inline-flex items-center gap-3">
+				<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+					<path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+				</svg>
+				Quero Ser Lojista
+				<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+				</svg>
+			</button>
+		</div>
+	</div>
+</section>
+
 <style>
 	/* Custom animations for floating elements */
 	@keyframes float {
