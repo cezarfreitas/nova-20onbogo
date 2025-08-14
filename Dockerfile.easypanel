@@ -11,13 +11,14 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-# Copiar script de start
-COPY start.sh ./
-RUN chmod +x start.sh
+# Dependências utilitárias para healthcheck
+RUN apk add --no-cache curl
 
 # Configuração
 EXPOSE 80
 ENV NODE_ENV=production
+ENV PORT=80
+ENV HOST=0.0.0.0
 
-# Usar script de start
-CMD ["./start.sh"]
+# Iniciar via servidor Node custom que força PORT=80
+CMD ["node", "server.js"]
