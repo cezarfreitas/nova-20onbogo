@@ -20,9 +20,9 @@ const config = {
 			polyfill: false
 		}),
 		
-		// Security and performance settings
+		// Security and performance settings (otimizado para EasyPanel)
 		csrf: {
-			checkOrigin: false, // Desabilitado para EasyPanel
+			checkOrigin: false // Desabilitado para proxies/EasyPanel
 		},
 		
 		// Enable service worker in production
