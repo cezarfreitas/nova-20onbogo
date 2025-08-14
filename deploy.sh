@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Onbongo B2B Deployment Script
+# Onbongo B2B Deployment Script for EasyPanel (Porta 80)
 # This script builds and deploys the Onbongo B2B application
 
 set -e  # Exit on any error
 
-echo "🚀 Starting Onbongo B2B Deployment..."
+echo "🚀 Starting Onbongo B2B Deployment for EasyPanel..."
 
 # Colors for output
 RED='\033[0;31m'
@@ -14,11 +14,11 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-# Configuration
+# Configuration for EasyPanel (Porta 80)
 IMAGE_NAME="onbongo-b2b"
 CONTAINER_NAME="onbongo-app"
 NETWORK_NAME="onbongo-network"
-PORT="3000"
+PORT="80"
 
 # Check if Docker is running
 if ! docker info > /dev/null 2>&1; then
@@ -26,34 +26,43 @@ if ! docker info > /dev/null 2>&1; then
     exit 1
 fi
 
-echo -e "${BLUE}📦 Building Docker image...${NC}"
+echo -e "${BLUE}📦 Building Docker image for EasyPanel...${NC}"
 
 # Try multiple build strategies
 BUILD_SUCCESS=false
 
-# Strategy 1: Main Dockerfile
-echo -e "${BLUE}🔄 Trying main Dockerfile...${NC}"
-if docker build -t $IMAGE_NAME:latest .; then
-    echo -e "${GREEN}✅ Main Dockerfile build successful!${NC}"
+# Strategy 1: EasyPanel Dockerfile (porta 80)
+echo -e "${BLUE}🔄 Trying EasyPanel Dockerfile (port 80)...${NC}"
+if docker build -f Dockerfile.easypanel -t $IMAGE_NAME:latest .; then
+    echo -e "${GREEN}✅ EasyPanel Dockerfile build successful!${NC}"
     BUILD_SUCCESS=true
 else
-    echo -e "${YELLOW}⚠��  Main Dockerfile failed${NC}"
+    echo -e "${YELLOW}⚠️  EasyPanel Dockerfile failed${NC}"
 
-    # Strategy 2: Fixed Dockerfile (regenerates package-lock.json)
-    echo -e "${BLUE}🔄 Trying fixed Dockerfile (regenerates lock file)...${NC}"
-    if docker build -f Dockerfile.fixed -t $IMAGE_NAME:latest .; then
-        echo -e "${GREEN}✅ Fixed Dockerfile build successful!${NC}"
+    # Strategy 2: Main Dockerfile
+    echo -e "${BLUE}🔄 Trying main Dockerfile...${NC}"
+    if docker build -t $IMAGE_NAME:latest .; then
+        echo -e "${GREEN}✅ Main Dockerfile build successful!${NC}"
         BUILD_SUCCESS=true
     else
-        echo -e "${YELLOW}⚠️  Fixed Dockerfile failed${NC}"
+        echo -e "${YELLOW}⚠️  Main Dockerfile failed${NC}"
 
-        # Strategy 3: Simple Dockerfile
-        echo -e "${BLUE}🔄 Trying simplified Dockerfile...${NC}"
-        if docker build -f Dockerfile.simple -t $IMAGE_NAME:latest .; then
-            echo -e "${GREEN}✅ Simplified Dockerfile build successful!${NC}"
+        # Strategy 3: Fixed Dockerfile (regenerates package-lock.json)
+        echo -e "${BLUE}🔄 Trying fixed Dockerfile (regenerates lock file)...${NC}"
+        if docker build -f Dockerfile.fixed -t $IMAGE_NAME:latest .; then
+            echo -e "${GREEN}✅ Fixed Dockerfile build successful!${NC}"
             BUILD_SUCCESS=true
         else
-            echo -e "${RED}❌ All build strategies failed!${NC}"
+            echo -e "${YELLOW}⚠️  Fixed Dockerfile failed${NC}"
+
+            # Strategy 4: Simple Dockerfile
+            echo -e "${BLUE}🔄 Trying simplified Dockerfile...${NC}"
+            if docker build -f Dockerfile.simple -t $IMAGE_NAME:latest .; then
+                echo -e "${GREEN}✅ Simplified Dockerfile build successful!${NC}"
+                BUILD_SUCCESS=true
+            else
+                echo -e "${RED}❌ All build strategies failed!${NC}"
+            fi
         fi
     fi
 fi
@@ -77,13 +86,13 @@ fi
 echo -e "${BLUE}🌐 Creating Docker network (if not exists)...${NC}"
 docker network ls | grep $NETWORK_NAME > /dev/null || docker network create $NETWORK_NAME
 
-echo -e "${BLUE}🚀 Starting new container...${NC}"
+echo -e "${BLUE}🚀 Starting new container on port 80 for EasyPanel...${NC}"
 docker run -d \
     --name $CONTAINER_NAME \
     --network $NETWORK_NAME \
-    -p $PORT:3000 \
+    -p $PORT:80 \
     -e NODE_ENV=production \
-    -e PORT=3000 \
+    -e PORT=80 \
     -e HOST=0.0.0.0 \
     --restart unless-stopped \
     $IMAGE_NAME:latest
@@ -96,6 +105,7 @@ echo -e "${BLUE}🔍 Performing health check...${NC}"
 if curl -f http://localhost:$PORT > /dev/null 2>&1; then
     echo -e "${GREEN}✅ Deployment successful! Application is running on port $PORT${NC}"
     echo -e "${GREEN}🌐 Access your application at: http://localhost:$PORT${NC}"
+    echo -e "${GREEN}🎯 EasyPanel ready - application configured for port 80${NC}"
 else
     echo -e "${RED}❌ Health check failed. Check container logs:${NC}"
     echo -e "${YELLOW}docker logs $CONTAINER_NAME${NC}"
@@ -105,9 +115,10 @@ fi
 echo -e "${BLUE}📊 Container status:${NC}"
 docker ps -f name=$CONTAINER_NAME
 
-echo -e "${GREEN}🎉 Deployment completed successfully!${NC}"
+echo -e "${GREEN}🎉 EasyPanel deployment completed successfully!${NC}"
 echo -e "${BLUE}💡 Useful commands:${NC}"
 echo -e "  View logs: ${YELLOW}docker logs -f $CONTAINER_NAME${NC}"
 echo -e "  Stop app:  ${YELLOW}docker stop $CONTAINER_NAME${NC}"
 echo -e "  Start app: ${YELLOW}docker start $CONTAINER_NAME${NC}"
 echo -e "  Shell access: ${YELLOW}docker exec -it $CONTAINER_NAME sh${NC}"
+echo -e "${GREEN}🎯 Application configured for EasyPanel on port 80${NC}"
