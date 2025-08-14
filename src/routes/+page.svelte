@@ -227,7 +227,7 @@
 </main>
 
 <!-- Registration Section -->
-<section class="bg-black py-20 px-4 sm:px-6 lg:px-8">
+<section class="bg-black py-12 sm:py-20 px-4 sm:px-6 lg:px-8">
 	<div class="max-w-7xl mx-auto">
 		<div class="grid lg:grid-cols-2 gap-16 items-start">
 			<!-- Left Side - Benefits -->
