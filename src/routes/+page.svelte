@@ -201,17 +201,6 @@
 						/>
 					</div>
 
-					<!-- Email -->
-					<div class="space-y-2">
-						<label for="email" class="block text-white font-semibold text-sm">E-mail *</label>
-						<input
-							type="email"
-							id="email"
-							placeholder="seu@email.com"
-							required
-							class="w-full px-4 py-3 rounded-xl border-0 focus:outline-none focus:ring-3 focus:ring-white/30 text-gray-900 placeholder:text-gray-500 shadow-inner"
-						/>
-					</div>
 
 					<!-- WhatsApp -->
 					<div class="space-y-2">
@@ -225,39 +214,6 @@
 						/>
 					</div>
 
-					<!-- Cidade/Estado -->
-					<div class="grid grid-cols-2 gap-4">
-						<div class="space-y-2">
-							<label for="cidade" class="block text-white font-semibold text-sm">Cidade *</label>
-							<input
-								type="text"
-								id="cidade"
-								placeholder="São Paulo"
-								required
-								class="w-full px-4 py-3 rounded-xl border-0 focus:outline-none focus:ring-3 focus:ring-white/30 text-gray-900 placeholder:text-gray-500 shadow-inner"
-							/>
-						</div>
-						<div class="space-y-2">
-							<label for="estado" class="block text-white font-semibold text-sm">Estado *</label>
-							<select
-								id="estado"
-								required
-								class="w-full px-4 py-3 rounded-xl border-0 focus:outline-none focus:ring-3 focus:ring-white/30 text-gray-900 shadow-inner"
-							>
-								<option value="">UF</option>
-								<option value="SP">SP</option>
-								<option value="RJ">RJ</option>
-								<option value="MG">MG</option>
-								<option value="RS">RS</option>
-								<option value="PR">PR</option>
-								<option value="SC">SC</option>
-								<option value="BA">BA</option>
-								<option value="GO">GO</option>
-								<option value="PE">PE</option>
-								<option value="CE">CE</option>
-							</select>
-						</div>
-					</div>
 
 					<!-- Tipo de Cadastro -->
 					<div class="space-y-4">
