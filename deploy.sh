@@ -28,15 +28,43 @@ fi
 
 echo -e "${BLUE}📦 Building Docker image...${NC}"
 
-# Try main Dockerfile first, fallback to simple version if it fails
-if ! docker build -t $IMAGE_NAME:latest .; then
-    echo -e "${YELLOW}⚠️  Main build failed, trying simplified Dockerfile...${NC}"
-    if docker build -f Dockerfile.simple -t $IMAGE_NAME:latest .; then
-        echo -e "${GREEN}✅ Simplified build successful!${NC}"
+# Try multiple build strategies
+BUILD_SUCCESS=false
+
+# Strategy 1: Main Dockerfile
+echo -e "${BLUE}🔄 Trying main Dockerfile...${NC}"
+if docker build -t $IMAGE_NAME:latest .; then
+    echo -e "${GREEN}✅ Main Dockerfile build successful!${NC}"
+    BUILD_SUCCESS=true
+else
+    echo -e "${YELLOW}⚠��  Main Dockerfile failed${NC}"
+
+    # Strategy 2: Fixed Dockerfile (regenerates package-lock.json)
+    echo -e "${BLUE}🔄 Trying fixed Dockerfile (regenerates lock file)...${NC}"
+    if docker build -f Dockerfile.fixed -t $IMAGE_NAME:latest .; then
+        echo -e "${GREEN}✅ Fixed Dockerfile build successful!${NC}"
+        BUILD_SUCCESS=true
     else
-        echo -e "${RED}❌ Both build methods failed. Please check your code and try again.${NC}"
-        exit 1
+        echo -e "${YELLOW}⚠️  Fixed Dockerfile failed${NC}"
+
+        # Strategy 3: Simple Dockerfile
+        echo -e "${BLUE}🔄 Trying simplified Dockerfile...${NC}"
+        if docker build -f Dockerfile.simple -t $IMAGE_NAME:latest .; then
+            echo -e "${GREEN}✅ Simplified Dockerfile build successful!${NC}"
+            BUILD_SUCCESS=true
+        else
+            echo -e "${RED}❌ All build strategies failed!${NC}"
+        fi
     fi
+fi
+
+if [[ $BUILD_SUCCESS != true ]]; then
+    echo -e "${RED}❌ All build methods failed. Please check your dependencies and try again.${NC}"
+    echo -e "${YELLOW}💡 Common issues:${NC}"
+    echo -e "${YELLOW}   - Node version incompatibility (try Node 20+)${NC}"
+    echo -e "${YELLOW}   - package-lock.json out of sync (run 'npm install')${NC}"
+    echo -e "${YELLOW}   - Missing dependencies${NC}"
+    exit 1
 fi
 
 echo -e "${BLUE}🔍 Checking if container is running...${NC}"
