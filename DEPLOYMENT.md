@@ -44,7 +44,7 @@ chmod +x build-test.sh
 
 ## 🐳 Deploy com Docker
 
-### Método 1: Script Automático (Recomendado)
+### Método 1: Script Autom��tico (Recomendado)
 ```bash
 # Torne o script executável
 chmod +x deploy.sh
@@ -180,16 +180,33 @@ A aplicação inclui health checks automáticos:
 
 ### Problemas Comuns
 
-1. **Erro npm ci --only=production**
+1. **Incompatibilidade de versão do Node.js**
+   ```bash
+   # Erro: EBADENGINE Unsupported engine
+   # Solução: Usar Node 20+ ou Dockerfile.fixed
+   docker build -f Dockerfile.fixed -t onbongo-b2b:latest .
+   ```
+
+2. **package-lock.json desatualizado**
+   ```bash
+   # Erro: Missing packages from lock file
+   # Solução: Regenerar dependências
+   ./fix-deps.sh
+
+   # Ou usar Dockerfile que regenera automaticamente
+   docker build -f Dockerfile.fixed -t onbongo-b2b:latest .
+   ```
+
+3. **Erro npm ci --only=production**
    ```bash
    # Se encontrar erro com --only=production, use Dockerfile.simple
    docker build -f Dockerfile.simple -t onbongo-b2b:latest .
 
-   # Ou teste ambos os métodos
+   # Ou teste todos os métodos
    ./build-test.sh
    ```
 
-2. **Porta já em uso**
+4. **Porta já em uso**
    ```bash
    # Verificar o que está usando a porta
    lsof -i :3000
