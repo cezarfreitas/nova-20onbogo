@@ -642,9 +642,11 @@
 		<div class="border-t border-gray-700 pt-12 mb-12">
 			<div class="text-center">
 				<div class="mb-6">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-onbongo-orange rounded-xl mb-4">
-						<span class="text-white font-black text-xl">hub</span>
-					</div>
+					<img
+						src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fecc600377052470e9b915ff0ec188072?format=webp&width=150"
+						alt="Hub Logo"
+						class="h-16 w-auto mx-auto"
+					/>
 				</div>
 				<p class="text-gray-400 max-w-3xl mx-auto leading-relaxed">
 					Uma iniciativa do NTK Grupo Textil para democratizar o acesso dos lojistas às grandes marcas do mercado.
