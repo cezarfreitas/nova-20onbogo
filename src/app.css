@@ -49,4 +49,52 @@
 		content-visibility: auto;
 		contain-intrinsic-size: 400px 400px;
 	}
+
+	/* Mobile optimizations */
+	@media (max-width: 768px) {
+		/* Improve touch targets */
+		button, a, input, select, textarea {
+			min-height: 44px;
+		}
+
+		/* Optimize text rendering on mobile */
+		body {
+			-webkit-tap-highlight-color: transparent;
+			touch-action: manipulation;
+		}
+
+		/* Prevent zoom on input focus */
+		input, select, textarea {
+			font-size: 16px !important;
+		}
+
+		/* Optimize scrolling */
+		* {
+			-webkit-overflow-scrolling: touch;
+		}
+
+		/* Reduce animations on smaller screens */
+		.group:hover {
+			transform: none;
+		}
+
+		/* Optimize hero for mobile */
+		.hero-mobile {
+			min-height: 100vh;
+			min-height: 100dvh; /* Dynamic viewport height */
+		}
+	}
+
+	/* Accessibility improvements */
+	@media (prefers-reduced-motion: reduce) {
+		.group-hover\\:scale-105:hover {
+			transform: none;
+		}
+	}
+
+	/* Touch-friendly elements */
+	.touch-manipulation {
+		touch-action: manipulation;
+		-webkit-tap-highlight-color: transparent;
+	}
 }
