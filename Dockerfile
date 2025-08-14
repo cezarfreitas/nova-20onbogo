@@ -4,15 +4,11 @@ FROM node:18-alpine AS builder
 # Set working directory
 WORKDIR /app
 
-# Install pnpm for faster package management (optional, can use npm)
-RUN npm install -g pnpm
-
-# Copy package files
+# Copy package files first for better caching
 COPY package*.json ./
-COPY pnpm-lock.yaml* ./
 
-# Install dependencies
-RUN npm ci --omit=dev && npm cache clean --force
+# Install ALL dependencies (including devDependencies for build)
+RUN npm ci && npm cache clean --force
 
 # Copy source code
 COPY . .
