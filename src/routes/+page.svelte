@@ -81,10 +81,10 @@
 	<!-- Floating elements for visual interest -->
 	<div class="absolute inset-0 pointer-events-none overflow-hidden">
 		<!-- Floating shapes -->
-		<div class="absolute top-1/4 left-8 h-12 w-12 rounded-full bg-white/10 animate-pulse"></div>
-		<div class="absolute top-1/3 right-12 h-8 w-8 rounded-full bg-white/15 animate-pulse delay-1000"></div>
-		<div class="absolute bottom-1/4 left-16 h-10 w-10 rounded-full bg-white/10 animate-pulse delay-500"></div>
-		<div class="absolute bottom-1/3 right-8 h-6 w-6 rounded-full bg-white/15 animate-pulse delay-1500"></div>
+		<div class="absolute top-1/4 left-8 h-12 w-12 rounded-full bg-onbongo-orange/20 animate-pulse"></div>
+		<div class="absolute top-1/3 right-12 h-8 w-8 rounded-full bg-onbongo-orange/25 animate-pulse delay-1000"></div>
+		<div class="absolute bottom-1/4 left-16 h-10 w-10 rounded-full bg-onbongo-orange/20 animate-pulse delay-500"></div>
+		<div class="absolute bottom-1/3 right-8 h-6 w-6 rounded-full bg-onbongo-orange/25 animate-pulse delay-1500"></div>
 	</div>
 </main>
 
