@@ -10,14 +10,20 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install --production
+# Install full dependencies for build
+RUN npm ci
 
 # Copy app source
 COPY . .
 
 # Build the application
 RUN npm run build
+
+# Remove dev dependencies for runtime
+RUN npm prune --omit=dev
+
+# Allow non-root to bind to port 80
+RUN apk add --no-cache libcap && setcap 'cap_net_bind_service=+ep' /usr/local/bin/node
 
 # Create non-root user
 RUN addgroup -g 1001 -S nodejs

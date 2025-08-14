@@ -70,8 +70,10 @@ docker build -t onbongo-b2b:latest .
 # Run do container
 docker run -d \
   --name onbongo-app \
-  -p 3000:3000 \
+  -p 80:80 \
   -e NODE_ENV=production \
+  -e PORT=80 \
+  -e HOST=0.0.0.0 \
   --restart unless-stopped \
   onbongo-b2b:latest
 ```
@@ -93,7 +95,7 @@ docker-compose up -d
 
 1. **Health Check**
    ```bash
-   curl http://localhost:3000/
+   curl http://localhost:80/
    ```
 
 2. **Logs da aplicação**
@@ -209,10 +211,10 @@ A aplicação inclui health checks automáticos:
 4. **Porta já em uso**
    ```bash
    # Verificar o que está usando a porta
-   lsof -i :3000
+   lsof -i :80
 
    # Usar porta diferente
-   docker run -p 3001:3000 onbongo-b2b:latest
+   docker run -p 8080:80 onbongo-b2b:latest
    ```
 
 2. **Erro de memória**
