@@ -34,13 +34,11 @@
 		<div class="w-full max-w-4xl text-center">
 			<!-- Logo -->
 			<div class="mb-8 flex justify-center">
-				<div class="flex h-24 w-auto px-6 py-4 items-center justify-center rounded-2xl bg-white/20 backdrop-blur-sm shadow-2xl border-2 border-white/30">
-					<img
-						src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fc62fef7dce734b60bd7ec4b40a59a8bd?format=webp&width=200"
-						alt="Onbongo Logo"
-						class="h-16 w-auto"
-					/>
-				</div>
+				<img
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fc62fef7dce734b60bd7ec4b40a59a8bd?format=webp&width=200"
+					alt="Onbongo Logo"
+					class="h-20 w-auto"
+				/>
 			</div>
 
 			<!-- Subtitle -->
