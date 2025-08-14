@@ -36,7 +36,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install production dependencies only
-RUN npm ci --only=production --no-audit --no-fund && npm cache clean --force
+RUN npm ci --omit=dev --no-audit --no-fund && npm cache clean --force
 
 # Copy built application from builder stage
 COPY --from=builder --chown=svelte:nodejs /app/build ./build
