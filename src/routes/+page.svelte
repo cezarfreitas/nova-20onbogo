@@ -277,73 +277,61 @@
 			<!-- Row 1 -->
 			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
 				<img
-					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2F2a8173e4598e4694bc05e53737a0cdd3?format=webp&width=400"
-					alt="Coleção Onbongo 1"
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fa099ce9a3ce740febf1b3044c2580285?format=webp&width=400"
+					alt="Coleção Onbongo - Look Streetwear"
 					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
 				/>
 			</div>
 			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
 				<img
-					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fa86590b89c5940fab8fb45b82f272ac6?format=webp&width=400"
-					alt="Coleção Onbongo 2"
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2F48e791eeed6d4443b12b0a089eb3a019?format=webp&width=400"
+					alt="Coleção Onbongo - Trio Urbano"
 					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
 				/>
 			</div>
 			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
-				<div class="w-full h-full bg-gradient-to-br from-onbongo-orange/20 to-onbongo-orange/40 flex items-center justify-center">
-					<div class="text-center p-4">
-						<div class="text-onbongo-orange text-4xl font-black mb-2">+100k</div>
-						<div class="text-black font-semibold">Produtos Disponíveis</div>
-					</div>
-				</div>
+				<img
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fe483117522274031aec388eb26efa263?format=webp&width=400"
+					alt="Coleção Onbongo - Street Style"
+					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+				/>
 			</div>
 			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
-				<div class="w-full h-full bg-black flex items-center justify-center">
-					<div class="text-center p-4">
-						<svg class="w-12 h-12 text-onbongo-orange mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-							<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-						</svg>
-						<div class="text-white font-semibold text-sm">Qualidade Garantida</div>
-					</div>
-				</div>
+				<img
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2F381e0b268ba64f6d863d2ffc31efe613?format=webp&width=400"
+					alt="Coleção Onbongo - Camiseta Amarela"
+					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+				/>
 			</div>
 
 			<!-- Row 2 -->
 			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
-				<div class="w-full h-full bg-gradient-to-br from-black to-gray-800 flex items-center justify-center">
-					<div class="text-center p-4">
-						<div class="text-onbongo-orange text-3xl font-black mb-1">30+</div>
-						<div class="text-white font-semibold text-sm">Anos de História</div>
-					</div>
-				</div>
+				<img
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2F702cecb9d1624205b9743c250391fb28?format=webp&width=400"
+					alt="Coleção Onbongo - Look Colorido"
+					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+				/>
 			</div>
 			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
-				<div class="w-full h-full bg-onbongo-orange flex items-center justify-center">
-					<div class="text-center p-4">
-						<svg class="w-12 h-12 text-white mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-							<path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
-						</svg>
-						<div class="text-white font-semibold text-sm">Suporte Total</div>
-					</div>
-				</div>
+				<img
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fc870b8e2e0a5441b820c6270decb2a87?format=webp&width=400"
+					alt="Coleção Onbongo - Style Urbano"
+					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+				/>
 			</div>
 			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
-				<div class="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-					<div class="text-center p-4">
-						<svg class="w-12 h-12 text-onbongo-orange mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-							<path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
-						</svg>
-						<div class="text-black font-semibold text-sm">Pronta Entrega</div>
-					</div>
-				</div>
+				<img
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fffc7286166654cc88333a15ec5d2a758?format=webp&width=400"
+					alt="Coleção Onbongo - Moletom Azul"
+					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+				/>
 			</div>
 			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
-				<div class="w-full h-full bg-gradient-to-br from-onbongo-orange to-onbongo-orange-dark flex items-center justify-center">
-					<div class="text-center p-4">
-						<div class="text-white text-2xl font-black mb-1">ONBONGO</div>
-						<div class="text-white/90 font-medium text-xs">Streetwear Oficial</div>
-					</div>
-				</div>
+				<img
+					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2F91d49d8c2fe24f8794eb74eb6d4d66ca?format=webp&width=400"
+					alt="Coleção Onbongo - T-shirt Vermelha"
+					class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+				/>
 			</div>
 		</div>
 
