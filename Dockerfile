@@ -37,7 +37,6 @@ RUN npm ci --omit=dev --no-audit --no-fund && npm cache clean --force
 # Copy built application from builder stage
 COPY --from=builder --chown=svelte:nodejs /app/build ./build
 COPY --from=builder --chown=svelte:nodejs /app/package.json ./
-COPY --from=builder --chown=svelte:nodejs /app/server.js ./
 
 # Copy static files if they exist
 COPY --from=builder --chown=svelte:nodejs /app/static ./static
@@ -59,4 +58,4 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
 
 # Start the application with dumb-init for proper signal handling
 ENTRYPOINT ["dumb-init", "--"]
-CMD ["node", "server.js"]
+CMD ["sh", "-c", "PORT=80 HOST=0.0.0.0 node build"]
