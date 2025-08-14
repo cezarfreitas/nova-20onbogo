@@ -17,8 +17,8 @@
 			class="absolute inset-0 w-full h-full object-cover"
 		/>
 
-		<!-- Red overlay to maintain brand color and readability -->
-		<div class="absolute inset-0 bg-gradient-to-br from-ecko-red/85 via-ecko-red/75 to-ecko-red-dark/85"></div>
+		<!-- Black overlay for dramatic effect and readability -->
+		<div class="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-black/80"></div>
 		
 		<!-- Ecko logo pattern scattered -->
 		<div class="absolute inset-0 opacity-10">
