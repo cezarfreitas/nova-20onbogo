@@ -27,7 +27,17 @@ if ! docker info > /dev/null 2>&1; then
 fi
 
 echo -e "${BLUE}📦 Building Docker image...${NC}"
-docker build -t $IMAGE_NAME:latest .
+
+# Try main Dockerfile first, fallback to simple version if it fails
+if ! docker build -t $IMAGE_NAME:latest .; then
+    echo -e "${YELLOW}⚠️  Main build failed, trying simplified Dockerfile...${NC}"
+    if docker build -f Dockerfile.simple -t $IMAGE_NAME:latest .; then
+        echo -e "${GREEN}✅ Simplified build successful!${NC}"
+    else
+        echo -e "${RED}❌ Both build methods failed. Please check your code and try again.${NC}"
+        exit 1
+    fi
+fi
 
 echo -e "${BLUE}🔍 Checking if container is running...${NC}"
 if docker ps -q -f name=$CONTAINER_NAME | grep -q .; then
