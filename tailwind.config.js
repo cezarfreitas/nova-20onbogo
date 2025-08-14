@@ -4,10 +4,12 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				ecko: {
-					red: '#D41E2C',
-					'red-dark': '#B71C1C',
-					'red-light': '#FF5252'
+				onbongo: {
+					orange: '#FF6B00',
+					'orange-dark': '#E55A00',
+					'orange-light': '#FF8533',
+					black: '#000000',
+					white: '#FFFFFF'
 				}
 			},
 			fontFamily: {
