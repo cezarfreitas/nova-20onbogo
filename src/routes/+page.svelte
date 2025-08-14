@@ -41,6 +41,11 @@
 	<meta name="msapplication-TileColor" content="#FF6B00" />
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 
+	<!-- Performance Hints -->
+	<link rel="preload" as="image" href="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fa86590b89c5940fab8fb45b82f272ac6?format=webp&width=1920&quality=85" fetchpriority="high" />
+	<link rel="prefetch" as="image" href="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fa099ce9a3ce740febf1b3044c2580285?format=webp&width=400&quality=80" />
+	<link rel="dns-prefetch" href="//cdn.builder.io" />
+
 	<!-- Business Information -->
 	<meta name="geo.region" content="BR" />
 	<meta name="geo.country" content="Brazil" />
