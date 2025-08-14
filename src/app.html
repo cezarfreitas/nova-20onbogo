@@ -5,6 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+		<!-- Critical Performance -->
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+		<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" /></noscript>
+
+		<!-- Critical Image Preload -->
+		<link rel="preload" as="image" href="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fa86590b89c5940fab8fb45b82f272ac6?format=webp&width=1920&quality=85" fetchpriority="high" />
+		<link rel="preload" as="image" href="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fc62fef7dce734b60bd7ec4b40a59a8bd?format=webp&width=200&quality=90" fetchpriority="high" />
+
 		<!-- Favicons -->
 		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
 		<link rel="apple-touch-icon" sizes="180x180" href="%sveltekit.assets%/apple-touch-icon.png" />
@@ -20,9 +28,14 @@
 		<!-- Preconnect -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://cdn.builder.io" />
 
 		<!-- Security Headers -->
 		<meta name="referrer" content="strict-origin-when-cross-origin" />
+
+		<!-- Performance Hints -->
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="color-scheme" content="light" />
 
 		%sveltekit.head%
 	</head>
