@@ -144,7 +144,7 @@
 	</script>
 </svelte:head>
 
-<main class="relative min-h-screen overflow-hidden">
+<main class="relative hero-mobile overflow-hidden">
 	<!-- Background with red gradient and pattern -->
 	<div class="absolute inset-0">
 		<!-- Hero background image -->
