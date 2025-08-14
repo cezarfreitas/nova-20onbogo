@@ -1,26 +1,25 @@
-# Dockerfile ultra-simples para EasyPanel
+# Dockerfile otimizado para EasyPanel
 FROM node:20-alpine
 
-# Diretório de trabalho
 WORKDIR /app
 
-# Instalar dependências (apenas as necessárias para build)
+# Instala dependências primeiro (melhora cache)
 COPY package*.json ./
 RUN npm ci
 
-# Copiar código da aplicação
+# Copia código
 COPY . .
 
-# Build do SvelteKit
+# Build de produção do SvelteKit
 RUN npm run build
 
-# Porta 80 no container
+# Porta exposta no container
 EXPOSE 80
 
-# Definir variáveis de ambiente fixas
+# Variáveis de ambiente padrão
 ENV PORT=80
 ENV HOST=0.0.0.0
 ENV NODE_ENV=production
 
-# Iniciar aplicação com adapter-node
-CMD ["node", "build/index.js"]
+# Inicia pelo server.js (controla porta)
+CMD ["node", "server.js"]
