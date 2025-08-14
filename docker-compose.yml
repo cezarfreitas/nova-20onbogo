@@ -1,48 +1,12 @@
 version: '3.8'
 
 services:
-  # Production service
-  onbongo-app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      target: production
-    container_name: onbongo-b2b
-    restart: unless-stopped
+  app:
+    build: .
     ports:
       - "80:80"
     environment:
       - NODE_ENV=production
       - PORT=80
       - HOST=0.0.0.0
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:80/"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 40s
-    networks:
-      - onbongo-network
-
-  # Nginx reverse proxy (optional)
-  nginx:
-    image: nginx:alpine
-    container_name: onbongo-nginx
-    restart: unless-stopped
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./ssl:/etc/nginx/ssl:ro
-    depends_on:
-      - onbongo-app
-    networks:
-      - onbongo-network
-
-networks:
-  onbongo-network:
-    driver: bridge
-
-volumes:
-  ssl_certs:
+    restart: always
