@@ -11,4 +11,4 @@ echo "📍 PORT: $PORT"
 echo "📍 HOST: $HOST"
 
 # Inicia o servidor
-exec node build
+exec node build/index.js
