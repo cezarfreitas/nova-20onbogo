@@ -3,8 +3,140 @@
 </script>
 
 <svelte:head>
-	<title>Onbongo B2B - Seja um Lojista Oficial</title>
-	<meta name="description" content="Aproveite a oportunidade de vender uma das maiores marcas do Brasil e do mundo." />
+	<!-- Primary Meta Tags -->
+	<title>Onbongo B2B - Seja um Lojista Oficial | A Maior Marca de Streetwear do Brasil</title>
+	<meta name="title" content="Onbongo B2B - Seja um Lojista Oficial | A Maior Marca de Streetwear do Brasil" />
+	<meta name="description" content="Torne-se um lojista oficial Onbongo e tenha acesso exclusivo à maior marca de streetwear do Brasil. Mais de 100.000 produtos, pronta entrega e suporte completo para seu negócio crescer." />
+	<meta name="keywords" content="onbongo, lojista, streetwear, moda urbana, revenda, B2B, franquia, parceria comercial, roupas, brasil" />
+	<meta name="author" content="Onbongo Brasil" />
+	<meta name="robots" content="index, follow" />
+	<meta name="language" content="pt-BR" />
+	<meta name="revisit-after" content="1 days" />
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://onbongo-b2b.com.br" />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Onbongo B2B" />
+	<meta property="og:title" content="Onbongo B2B - Seja um Lojista Oficial | A Maior Marca de Streetwear do Brasil" />
+	<meta property="og:description" content="Torne-se um lojista oficial Onbongo e tenha acesso exclusivo à maior marca de streetwear do Brasil. Mais de 100.000 produtos, pronta entrega e suporte completo." />
+	<meta property="og:url" content="https://onbongo-b2b.com.br" />
+	<meta property="og:image" content="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fa86590b89c5940fab8fb45b82f272ac6?format=webp&width=1200" />
+	<meta property="og:image:alt" content="Onbongo - A maior marca de streetwear do Brasil" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:locale" content="pt_BR" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@onbongo" />
+	<meta name="twitter:creator" content="@onbongo" />
+	<meta name="twitter:title" content="Onbongo B2B - Seja um Lojista Oficial" />
+	<meta name="twitter:description" content="Torne-se um lojista oficial Onbongo. Acesso exclusivo à maior marca de streetwear do Brasil." />
+	<meta name="twitter:image" content="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fa86590b89c5940fab8fb45b82f272ac6?format=webp&width=1200" />
+
+	<!-- Additional Meta Tags -->
+	<meta name="theme-color" content="#FF6B00" />
+	<meta name="msapplication-TileColor" content="#FF6B00" />
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+
+	<!-- Business Information -->
+	<meta name="geo.region" content="BR" />
+	<meta name="geo.country" content="Brazil" />
+	<meta name="geo.placename" content="Brasil" />
+
+	<!-- WhatsApp Sharing -->
+	<meta property="og:image:secure_url" content="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fa86590b89c5940fab8fb45b82f272ac6?format=webp&width=1200" />
+
+	<!-- JSON-LD Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "Onbongo",
+		"alternateName": "Onbongo Brasil",
+		"url": "https://onbongo-b2b.com.br",
+		"logo": "https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fc62fef7dce734b60bd7ec4b40a59a8bd?format=webp&width=300",
+		"description": "A maior marca de streetwear do Brasil. Conectando a cultura urbana através da moda autêntica desde 1993.",
+		"foundingDate": "1993",
+		"address": {
+			"@type": "PostalAddress",
+			"addressCountry": "BR",
+			"addressLocality": "São Paulo",
+			"addressRegion": "SP"
+		},
+		"contactPoint": {
+			"@type": "ContactPoint",
+			"telephone": "+55-11-99999-9999",
+			"contactType": "customer service",
+			"availableLanguage": "Portuguese"
+		},
+		"sameAs": [
+			"https://www.instagram.com/onbongo",
+			"https://www.facebook.com/onbongo"
+		],
+		"brand": {
+			"@type": "Brand",
+			"name": "Onbongo",
+			"description": "Marca líder em streetwear no Brasil"
+		}
+	}
+	</script>
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebPage",
+		"name": "Onbongo B2B - Seja um Lojista Oficial",
+		"description": "Torne-se um lojista oficial Onbongo e tenha acesso exclusivo à maior marca de streetwear do Brasil.",
+		"url": "https://onbongo-b2b.com.br",
+		"mainEntity": {
+			"@type": "WebSite",
+			"name": "Onbongo B2B",
+			"url": "https://onbongo-b2b.com.br",
+			"potentialAction": {
+				"@type": "SearchAction",
+				"target": "https://onbongo-b2b.com.br/search?q={search_term_string}",
+				"query-input": "required name=search_term_string"
+			}
+		},
+		"breadcrumb": {
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://onbongo-b2b.com.br"
+				}
+			]
+		}
+	}
+	</script>
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Service",
+		"name": "Programa de Lojistas Onbongo",
+		"description": "Programa oficial para lojistas interessados em revender produtos Onbongo com suporte completo e preços exclusivos.",
+		"provider": {
+			"@type": "Organization",
+			"name": "Onbongo",
+			"url": "https://onbongo-b2b.com.br"
+		},
+		"serviceType": "Programa de Parceria B2B",
+		"areaServed": {
+			"@type": "Country",
+			"name": "Brasil"
+		},
+		"audience": {
+			"@type": "BusinessAudience",
+			"audienceType": "Lojistas e Varejistas"
+		}
+	}
+	</script>
 </svelte:head>
 
 <main class="relative min-h-screen overflow-hidden">
