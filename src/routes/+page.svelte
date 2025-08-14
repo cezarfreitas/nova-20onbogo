@@ -400,7 +400,7 @@
 </section>
 
 <!-- Gallery Section -->
-<section class="bg-white py-20 px-4 sm:px-6 lg:px-8">
+<section class="bg-white py-12 sm:py-20 px-4 sm:px-6 lg:px-8">
 	<div class="max-w-7xl mx-auto">
 		<!-- Section Header -->
 		<div class="text-center mb-16">
@@ -415,7 +415,7 @@
 		</div>
 
 		<!-- Gallery Grid -->
-		<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+		<div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-8 sm:mb-12">
 			<!-- Row 1 -->
 			<div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 group cursor-pointer">
 				<img
