@@ -40,6 +40,7 @@ RUN npm install --omit=dev --no-audit --no-fund && npm cache clean --force
 # Copy built application from builder
 COPY --from=builder --chown=sveltekit:nodejs /app/build ./build
 COPY --from=builder --chown=sveltekit:nodejs /app/static ./static
+COPY --from=builder --chown=sveltekit:nodejs /app/server.js ./
 
 # Set environment for EasyPanel (porta 80)
 ENV NODE_ENV=production
@@ -58,4 +59,4 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
 
 # Start with dumb-init for proper signal handling
 ENTRYPOINT ["dumb-init", "--"]
-CMD ["node", "build"]
+CMD ["node", "server.js"]
