@@ -15,7 +15,9 @@ const config = {
 			// default options are shown
 			out: 'build',
 			precompress: true,
-			envPrefix: 'PUBLIC_'
+			envPrefix: 'PUBLIC_',
+			// Force port 80 for EasyPanel
+			polyfill: false
 		}),
 		
 		// Security and performance settings
