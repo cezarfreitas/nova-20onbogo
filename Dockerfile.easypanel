@@ -1,7 +1,7 @@
-# Dockerfile otimizado para EasyPanel - Porta 80
-FROM node:20-alpine AS builder
+# Dockerfile simplificado para EasyPanel
+FROM node:20-alpine
 
-# Install curl for health checks
+# Install dependencies
 RUN apk add --no-cache curl
 
 # Set working directory
@@ -11,52 +11,33 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci && npm cache clean --force
+RUN npm install --production
 
-# Copy source code
+# Copy all source files
 COPY . .
 
 # Build the application
 RUN npm run build
 
-# Production stage
-FROM node:20-alpine AS production
+# Remove development dependencies and clean cache
+RUN npm prune --production && npm cache clean --force
 
-# Install curl and security updates
-RUN apk update && apk upgrade && apk add --no-cache curl dumb-init
+# Create simple start script for EasyPanel
+RUN echo '#!/bin/sh' > /app/start-easypanel.sh && \
+    echo 'export PORT=80' >> /app/start-easypanel.sh && \
+    echo 'export HOST=0.0.0.0' >> /app/start-easypanel.sh && \
+    echo 'export NODE_ENV=production' >> /app/start-easypanel.sh && \
+    echo 'echo "🚀 Starting Onbongo B2B for EasyPanel on port 80..."' >> /app/start-easypanel.sh && \
+    echo 'exec node build/index.js' >> /app/start-easypanel.sh && \
+    chmod +x /app/start-easypanel.sh
 
-# Create non-root user
-RUN addgroup -g 1001 -S nodejs && adduser -S sveltekit -u 1001
+# Expose port 80
+EXPOSE 80
 
-# Set working directory
-WORKDIR /app
-
-# Copy package.json
-COPY package.json ./
-
-# Install production dependencies
-RUN npm install --omit=dev --no-audit --no-fund && npm cache clean --force
-
-# Copy built application from builder
-COPY --from=builder --chown=sveltekit:nodejs /app/build ./build
-COPY --from=builder --chown=sveltekit:nodejs /app/static ./static
-COPY --from=builder --chown=sveltekit:nodejs /app/server-port80.js ./
-
-# Set environment for EasyPanel (porta 80)
+# Set environment variables
 ENV NODE_ENV=production
 ENV PORT=80
 ENV HOST=0.0.0.0
 
-# Switch to non-root user
-USER sveltekit
-
-# Expose port 80 for EasyPanel
-EXPOSE 80
-
-# Health check
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD curl -f http://localhost:80/ || exit 1
-
-# Start with dumb-init for proper signal handling
-ENTRYPOINT ["dumb-init", "--"]
-CMD ["node", "server-port80.js"]
+# Use the start script
+CMD ["/app/start-easypanel.sh"]
