@@ -14,6 +14,9 @@ COPY . .
 # Build da aplicação
 RUN npm run build
 
+# Instalar express para servidor customizado
+RUN npm install express
+
 # Definir variáveis de ambiente
 ENV NODE_ENV=production
 ENV PORT=80
