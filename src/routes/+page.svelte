@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Ecko B2B - Seja um Lojista Oficial</title>
+	<title>Onbongo B2B - Seja um Lojista Oficial</title>
 	<meta name="description" content="Aproveite a oportunidade de vender uma das maiores marcas do Brasil e do mundo." />
 </svelte:head>
 
@@ -22,10 +22,10 @@
 		
 		<!-- Ecko logo pattern scattered -->
 		<div class="absolute inset-0 opacity-10">
-			<div class="absolute top-20 left-20 text-white/20 text-8xl font-black transform rotate-12">ecko</div>
-			<div class="absolute top-60 right-32 text-white/20 text-6xl font-black transform -rotate-6">ecko</div>
-			<div class="absolute bottom-40 left-40 text-white/20 text-7xl font-black transform rotate-6">ecko</div>
-			<div class="absolute bottom-20 right-20 text-white/20 text-5xl font-black transform -rotate-12">ecko</div>
+			<div class="absolute top-20 left-20 text-white/20 text-8xl font-black transform rotate-12">onbongo</div>
+			<div class="absolute top-60 right-32 text-white/20 text-6xl font-black transform -rotate-6">onbongo</div>
+			<div class="absolute bottom-40 left-40 text-white/20 text-7xl font-black transform rotate-6">onbongo</div>
+			<div class="absolute bottom-20 right-20 text-white/20 text-5xl font-black transform -rotate-12">onbongo</div>
 		</div>
 	</div>
 
@@ -34,8 +34,12 @@
 		<div class="w-full max-w-4xl text-center">
 			<!-- Logo -->
 			<div class="mb-8 flex justify-center">
-				<div class="flex h-20 w-20 items-center justify-center rounded-2xl bg-ecko-red-dark shadow-2xl border-2 border-white/30">
-					<div class="text-white font-black text-2xl tracking-tight">ecko</div>
+				<div class="flex h-24 w-auto px-6 py-4 items-center justify-center rounded-2xl bg-white/20 backdrop-blur-sm shadow-2xl border-2 border-white/30">
+					<img
+						src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fc62fef7dce734b60bd7ec4b40a59a8bd?format=webp&width=200"
+						alt="Onbongo Logo"
+						class="h-16 w-auto"
+					/>
 				</div>
 			</div>
 
@@ -48,7 +52,7 @@
 			<h1 class="mb-8 text-4xl font-black text-white sm:text-5xl lg:text-7xl xl:text-8xl">
 				<span class="block">SEJA UM</span>
 				<span class="block">LOJISTA OFICIAL</span>
-				<span class="block text-white/95">ECKO</span>
+				<span class="block text-white/95">ONBONGO</span>
 			</h1>
 
 			<!-- Description -->
