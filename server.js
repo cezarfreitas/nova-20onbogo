@@ -4,6 +4,9 @@ import { handler } from './build/handler.js';
 
 const app = express();
 
+// Configuração para proxies (EasyPanel)
+app.set('trust proxy', true);
+
 // Usa o handler do SvelteKit
 app.use(handler);
 

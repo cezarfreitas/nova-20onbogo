@@ -22,7 +22,7 @@ const config = {
 		
 		// Security and performance settings
 		csrf: {
-			checkOrigin: true,
+			checkOrigin: false, // Desabilitado para EasyPanel
 		},
 		
 		// Enable service worker in production
