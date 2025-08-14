@@ -20,7 +20,7 @@ COPY . .
 RUN npm run build
 
 # Copiar script de inicialização personalizado
-COPY start-port80.js ./
+COPY start-simple.js ./
 
 # Expor porta 80
 EXPOSE 80
@@ -31,4 +31,4 @@ ENV PORT=80
 ENV HOST=0.0.0.0
 
 # Comando de inicialização
-CMD ["node", "start-port80.js"]
+CMD ["node", "start-simple.js"]
