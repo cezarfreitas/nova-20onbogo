@@ -1,18 +1,23 @@
 #!/usr/bin/env node
 
 // Servidor personalizado para garantir que roda na porta 80
-import { handler } from './build/handler.js';
-import express from 'express';
+import { Server } from 'SERVER';
+import { manifest } from 'MANIFEST';
+import { prerendered } from 'PRERENDERED';
+import { base } from 'APP';
 
-const app = express();
+// Force port 80
+process.env.PORT = process.env.PORT || '80';
+process.env.HOST = process.env.HOST || '0.0.0.0';
 
-// Use a porta 80 por padrão ou a variável de ambiente PORT
-const port = process.env.PORT || 80;
-const host = process.env.HOST || '0.0.0.0';
+const server = new Server(manifest, {
+	env: process.env,
+	prerendered
+});
 
-// Use SvelteKit handler
-app.use(handler);
+const PORT = parseInt(process.env.PORT, 10) || 80;
+const HOST = process.env.HOST || '0.0.0.0';
 
-app.listen(port, host, () => {
-	console.log(`Listening on http://${host}:${port}`);
+server.listen(PORT, HOST, () => {
+	console.log(`Listening on http://${HOST}:${PORT}`);
 });
