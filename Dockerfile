@@ -19,9 +19,8 @@ COPY . .
 # Build da aplicação
 RUN npm run build
 
-# Copiar script de inicialização shell
-COPY start-easypanel.sh ./
-RUN chmod +x start-easypanel.sh
+# Copiar script definitivo de correção de porta
+COPY fix-port80.js ./
 
 # Expor porta 80
 EXPOSE 80
@@ -32,4 +31,4 @@ ENV PORT=80
 ENV HOST=0.0.0.0
 
 # Comando de inicialização
-CMD ["./start-easypanel.sh"]
+CMD ["node", "fix-port80.js"]
