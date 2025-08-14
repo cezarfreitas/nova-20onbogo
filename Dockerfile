@@ -19,8 +19,9 @@ COPY . .
 # Build da aplicação
 RUN npm run build
 
-# Copiar script de inicialização personalizado
-COPY start-simple.js ./
+# Copiar script de inicialização shell
+COPY start-easypanel.sh ./
+RUN chmod +x start-easypanel.sh
 
 # Expor porta 80
 EXPOSE 80
@@ -31,4 +32,4 @@ ENV PORT=80
 ENV HOST=0.0.0.0
 
 # Comando de inicialização
-CMD ["node", "start-simple.js"]
+CMD ["./start-easypanel.sh"]
