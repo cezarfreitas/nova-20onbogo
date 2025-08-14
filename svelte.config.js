@@ -12,12 +12,9 @@ const config = {
 		// If your environment is not supported or you settled on a specific environment, switch out the adapter.
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter({
-			// default options are shown
 			out: 'build',
-			precompress: true,
-			envPrefix: 'PUBLIC_',
-			// Force port 80 for EasyPanel
-			polyfill: false
+			precompress: false,
+			envPrefix: 'PUBLIC_'
 		}),
 		
 		// Security and performance settings (otimizado para EasyPanel)

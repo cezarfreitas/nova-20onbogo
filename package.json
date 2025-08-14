@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"build:easypanel": "node build-with-fix.js",
+		"build:check": "npm run build && node check-build.js",
 		"preview": "vite preview",
 		"start": "node build",
 		"prepare": "svelte-kit sync || echo ''",
