@@ -1,8 +1,13 @@
 #!/usr/bin/env node
 
 // Script que FORÇA a porta 80 definitivamente
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// Get __dirname equivalent in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // 1. Força as variáveis de ambiente ANTES de qualquer coisa
 process.env.PORT = '80';
@@ -18,12 +23,12 @@ const buildIndexPath = path.join(__dirname, 'build', 'index.js');
 
 if (fs.existsSync(buildIndexPath)) {
   let buildContent = fs.readFileSync(buildIndexPath, 'utf8');
-  
+
   // Substitui qualquer referência à porta 3000 por 80
   buildContent = buildContent.replace(/!path && '3000'/g, "'80'");
   buildContent = buildContent.replace(/'3000'/g, "'80'");
   buildContent = buildContent.replace(/3000/g, "80");
-  
+
   fs.writeFileSync(buildIndexPath, buildContent);
   console.log('✅ Build modificado para forçar porta 80');
 }
@@ -32,9 +37,10 @@ if (fs.existsSync(buildIndexPath)) {
 console.log('🚀 Iniciando servidor na porta 80...');
 
 // Importa e inicia dinamicamente
-import('./build/index.js').then(() => {
+try {
+  await import('./build/index.js');
   console.log('✅ Servidor iniciado com sucesso na porta 80!');
-}).catch((error) => {
+} catch (error) {
   console.error('❌ Erro ao iniciar servidor:', error);
   process.exit(1);
-});
+}
