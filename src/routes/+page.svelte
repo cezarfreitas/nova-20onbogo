@@ -88,6 +88,135 @@
 	</div>
 </main>
 
+<!-- Registration Section -->
+<section class="bg-black py-20 px-4 sm:px-6 lg:px-8">
+	<div class="max-w-7xl mx-auto">
+		<div class="grid lg:grid-cols-2 gap-12 items-center">
+			<!-- Left Side - Benefits -->
+			<div class="text-white">
+				<h2 class="text-3xl md:text-4xl lg:text-5xl font-black mb-12 leading-tight">
+					SEJA UM<br/>
+					<span class="text-onbongo-orange">LOJISTA OFICIAL</span><br/>
+					ONBONGO AGORA MESMO
+				</h2>
+
+				<div class="space-y-8">
+					<!-- Benefit 1 -->
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-8 h-8 rounded-full bg-onbongo-orange flex items-center justify-center">
+							<span class="text-white font-bold text-sm">1</span>
+						</div>
+						<div>
+							<h3 class="font-bold text-lg mb-2">Marca Internacional</h3>
+							<p class="text-white/80">Representa uma marca de streetwear reconhecida mundialmente.</p>
+						</div>
+					</div>
+
+					<!-- Benefit 2 -->
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-8 h-8 rounded-full bg-onbongo-orange flex items-center justify-center">
+							<span class="text-white font-bold text-sm">2</span>
+						</div>
+						<div>
+							<h3 class="font-bold text-lg mb-2">Pronta Entrega</h3>
+							<p class="text-white/80">Mais de 100.000 itens disponíveis para envio imediato.</p>
+						</div>
+					</div>
+
+					<!-- Benefit 3 -->
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-8 h-8 rounded-full bg-onbongo-orange flex items-center justify-center">
+							<span class="text-white font-bold text-sm">3</span>
+						</div>
+						<div>
+							<h3 class="font-bold text-lg mb-2">Plataforma Online</h3>
+							<p class="text-white/80">Acesse nosso catálogo digital com preços exclusivos para lojistas.</p>
+						</div>
+					</div>
+
+					<!-- Benefit 4 -->
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-8 h-8 rounded-full bg-onbongo-orange flex items-center justify-center">
+							<span class="text-white font-bold text-sm">4</span>
+						</div>
+						<div>
+							<h3 class="font-bold text-lg mb-2">Apoio às Vendas</h3>
+							<p class="text-white/80">Treinamento, materiais de marketing e suporte comercial especializado.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Right Side - Registration Form -->
+			<div class="bg-onbongo-orange rounded-2xl p-8 shadow-2xl">
+				<h3 class="text-white text-2xl font-bold mb-6 text-center">
+					Cadastre-se como Lojista!
+				</h3>
+
+				<form class="space-y-6">
+					<!-- Nome Completo -->
+					<div>
+						<label for="nome" class="block text-white font-medium mb-2">Nome Completo</label>
+						<input
+							type="text"
+							id="nome"
+							placeholder="Digite seu nome completo"
+							class="w-full px-4 py-3 rounded-lg border-0 focus:outline-none focus:ring-2 focus:ring-white/30 text-gray-900"
+						/>
+					</div>
+
+					<!-- WhatsApp -->
+					<div>
+						<label for="whatsapp" class="block text-white font-medium mb-2">WhatsApp para Contato</label>
+						<input
+							type="tel"
+							id="whatsapp"
+							placeholder="(11) 99999-9999"
+							class="w-full px-4 py-3 rounded-lg border-0 focus:outline-none focus:ring-2 focus:ring-white/30 text-gray-900"
+						/>
+					</div>
+
+					<!-- Tipo de Cadastro -->
+					<div>
+						<label class="block text-white font-medium mb-4">Tipo de Cadastro *</label>
+						<div class="space-y-3">
+							<label class="flex items-center gap-3 cursor-pointer">
+								<input
+									type="radio"
+									name="tipo_cadastro"
+									value="lojista"
+									class="w-4 h-4 text-white focus:ring-white/30"
+								/>
+								<span class="text-white">Sou Lojista (Tenho CNPJ)</span>
+							</label>
+							<label class="flex items-center gap-3 cursor-pointer">
+								<input
+									type="radio"
+									name="tipo_cadastro"
+									value="consumidor"
+									class="w-4 h-4 text-white focus:ring-white/30"
+								/>
+								<span class="text-white">Sou Consumidor Final</span>
+							</label>
+						</div>
+					</div>
+
+					<!-- Submit Button -->
+					<button
+						type="submit"
+						class="w-full bg-black text-white font-bold py-4 px-6 rounded-lg hover:bg-gray-900 transition-colors duration-200 flex items-center justify-center gap-2"
+					>
+						<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+						</svg>
+						Começar Agora!
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
 <style>
 	/* Custom animations for floating elements */
 	@keyframes float {
