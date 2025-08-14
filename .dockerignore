@@ -1,15 +1,8 @@
 node_modules
-npm-debug.log*
-.npm
-build
-.svelte-kit
 .git
-.gitignore
+.svelte-kit
+build
 *.md
 .env*
-coverage
 *.log
 .DS_Store
-Thumbs.db
-.vscode
-.idea

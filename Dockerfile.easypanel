@@ -1,43 +1,23 @@
-# Dockerfile simplificado para EasyPanel
+# Dockerfile alternativo para EasyPanel
 FROM node:20-alpine
 
-# Install dependencies
-RUN apk add --no-cache curl
-
-# Set working directory
 WORKDIR /app
 
-# Copy package files
+# Copiar e instalar
 COPY package*.json ./
+RUN npm install
 
-# Install dependencies
-RUN npm install --production
-
-# Copy all source files
+# Copiar código e build
 COPY . .
-
-# Build the application
 RUN npm run build
 
-# Remove development dependencies and clean cache
-RUN npm prune --production && npm cache clean --force
+# Copiar script de start
+COPY start.sh ./
+RUN chmod +x start.sh
 
-# Create simple start script for EasyPanel
-RUN echo '#!/bin/sh' > /app/start-easypanel.sh && \
-    echo 'export PORT=80' >> /app/start-easypanel.sh && \
-    echo 'export HOST=0.0.0.0' >> /app/start-easypanel.sh && \
-    echo 'export NODE_ENV=production' >> /app/start-easypanel.sh && \
-    echo 'echo "🚀 Starting Onbongo B2B for EasyPanel on port 80..."' >> /app/start-easypanel.sh && \
-    echo 'exec node build/index.js' >> /app/start-easypanel.sh && \
-    chmod +x /app/start-easypanel.sh
-
-# Expose port 80
+# Configuração
 EXPOSE 80
-
-# Set environment variables
 ENV NODE_ENV=production
-ENV PORT=80
-ENV HOST=0.0.0.0
 
-# Use the start script
-CMD ["/app/start-easypanel.sh"]
+# Usar script de start
+CMD ["./start.sh"]
