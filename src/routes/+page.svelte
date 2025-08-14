@@ -169,14 +169,14 @@
 	</div>
 
 	<!-- Hero content -->
-	<div class="relative z-10 flex min-h-screen items-center justify-center px-4 sm:px-6 lg:px-8">
+	<div class="relative z-10 flex min-h-screen items-center justify-center px-4 sm:px-6 lg:px-8 py-8">
 		<div class="w-full max-w-4xl text-center">
 			<!-- Logo -->
-			<div class="mb-8 flex justify-center">
+			<div class="mb-6 sm:mb-8 flex justify-center">
 				<img
 					src="https://cdn.builder.io/api/v1/image/assets%2F3a038822502b49b39691cbaf44da5f95%2Fc62fef7dce734b60bd7ec4b40a59a8bd?format=webp&width=200"
 					alt="Onbongo Logo"
-					class="h-20 w-auto"
+					class="h-16 sm:h-20 w-auto"
 				/>
 			</div>
 
@@ -186,16 +186,15 @@
 			</p>
 
 			<!-- Main headline -->
-			<h1 class="mb-8 text-4xl font-black text-white sm:text-5xl lg:text-7xl xl:text-8xl">
+			<h1 class="mb-6 sm:mb-8 text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-black text-white leading-tight">
 				<span class="block">SEJA UM</span>
 				<span class="block">LOJISTA OFICIAL</span>
-				<span class="block text-white/95">ONBONGO</span>
+				<span class="block text-onbongo-orange">ONBONGO</span>
 			</h1>
 
 			<!-- Description -->
-			<p class="mb-12 text-lg font-medium text-white/80 sm:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed">
-				Cadastre-se agora e tenha acesso à nossa plataforma digital com<br />
-				preços exclusivos para lojistas.
+			<p class="mb-8 sm:mb-12 text-base sm:text-lg lg:text-xl xl:text-2xl font-medium text-white/80 max-w-3xl mx-auto leading-relaxed px-2">
+				Cadastre-se agora e tenha acesso à nossa plataforma digital com preços exclusivos para lojistas.
 			</p>
 
 			<!-- CTA Button -->
@@ -209,8 +208,8 @@
 			</div>
 
 			<!-- Additional info -->
-			<div class="mt-16 text-center">
-				<p class="text-sm font-medium text-white/60 uppercase tracking-wide">
+			<div class="mt-8 sm:mt-16 text-center">
+				<p class="text-xs sm:text-sm font-medium text-white/60 uppercase tracking-wide">
 					Marca líder em streetwear
 				</p>
 			</div>
