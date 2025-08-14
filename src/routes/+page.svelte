@@ -674,7 +674,7 @@
 				Desenvolvido com
 				<span class="text-onbongo-orange">♥</span>
 				por
-				<a href="#" class="text-onbongo-orange hover:underline">NTK Digital</a>
+				<a href="#" class="text-onbongo-orange hover:underline">IDE | Negocios Digitais</a>
 			</p>
 		</div>
 	</div>
