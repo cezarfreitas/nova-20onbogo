@@ -166,11 +166,20 @@ A aplicação inclui health checks automáticos:
 
 ### Problemas Comuns
 
-1. **Porta já em uso**
+1. **Erro npm ci --only=production**
+   ```bash
+   # Se encontrar erro com --only=production, use Dockerfile.simple
+   docker build -f Dockerfile.simple -t onbongo-b2b:latest .
+
+   # Ou teste ambos os métodos
+   ./build-test.sh
+   ```
+
+2. **Porta já em uso**
    ```bash
    # Verificar o que está usando a porta
    lsof -i :3000
-   
+
    # Usar porta diferente
    docker run -p 3001:3000 onbongo-b2b:latest
    ```
