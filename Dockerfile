@@ -16,8 +16,8 @@ RUN npm install
 # Copiar código fonte
 COPY . .
 
-# Build da aplicação
-RUN npm run build
+# Build da aplicação com correção de porta
+RUN npm run build:easypanel
 
 # Copiar script definitivo de correção de porta
 COPY fix-port80.js ./
