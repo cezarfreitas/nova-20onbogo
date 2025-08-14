@@ -229,10 +229,10 @@
 <!-- Registration Section -->
 <section class="bg-black py-12 sm:py-20 px-4 sm:px-6 lg:px-8">
 	<div class="max-w-7xl mx-auto">
-		<div class="grid lg:grid-cols-2 gap-16 items-start">
+		<div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
 			<!-- Left Side - Benefits -->
-			<div class="text-white lg:sticky lg:top-8">
-				<h2 class="text-3xl md:text-4xl lg:text-5xl font-black mb-4 leading-tight">
+			<div class="text-white lg:sticky lg:top-8 order-2 lg:order-1">
+				<h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 leading-tight text-center lg:text-left">
 					SEJA UM<br/>
 					<span class="text-onbongo-orange">LOJISTA OFICIAL</span><br/>
 					ONBONGO
@@ -299,9 +299,9 @@
 			</div>
 
 			<!-- Right Side - Registration Form -->
-			<div class="bg-gradient-to-br from-onbongo-orange to-onbongo-orange-dark rounded-3xl p-8 shadow-2xl border border-onbongo-orange-light/20">
-				<div class="text-center mb-8">
-					<h3 class="text-white text-3xl font-black mb-2">
+			<div class="bg-gradient-to-br from-onbongo-orange to-onbongo-orange-dark rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-2xl border border-onbongo-orange-light/20 order-1 lg:order-2">
+				<div class="text-center mb-6 sm:mb-8">
+					<h3 class="text-white text-xl sm:text-2xl lg:text-3xl font-black mb-2">
 						Cadastre-se Agora
 					</h3>
 					<p class="text-white/90 text-sm">
