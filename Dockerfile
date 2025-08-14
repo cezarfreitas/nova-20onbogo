@@ -1,61 +1,43 @@
-# Multi-stage build for optimal size and performance
-FROM node:20-alpine AS builder
+# Dockerfile ultra-simples para EasyPanel
+FROM node:20-alpine
 
-# Set working directory
+# Instalar curl para health checks
+RUN apk add --no-cache curl
+
+# Definir diretório de trabalho
 WORKDIR /app
 
-# Copy package files first for better caching
+# Copiar arquivos de dependências
 COPY package*.json ./
 
-# Install ALL dependencies (including devDependencies for build)
-RUN npm ci && npm cache clean --force
+# Instalar dependências
+RUN npm install
 
-# Copy source code
+# Copiar código fonte
 COPY . .
 
-# Build the application
+# Build da aplicação
 RUN npm run build
 
-# Production stage
-FROM node:20-alpine AS production
+# Criar script de start personalizado
+RUN echo '#!/bin/sh' > start.sh && \
+    echo 'echo "🚀 Iniciando Onbongo B2B para EasyPanel..."' >> start.sh && \
+    echo 'echo "📍 Configurando ambiente..."' >> start.sh && \
+    echo 'export NODE_ENV=production' >> start.sh && \
+    echo 'export PORT=80' >> start.sh && \
+    echo 'export HOST=0.0.0.0' >> start.sh && \
+    echo 'echo "✅ Ambiente configurado: PORT=$PORT HOST=$HOST"' >> start.sh && \
+    echo 'echo "🚀 Iniciando servidor..."' >> start.sh && \
+    echo 'exec node build/index.js' >> start.sh && \
+    chmod +x start.sh
 
-# Install security updates and required tools
-RUN apk update && apk upgrade && apk add --no-cache dumb-init curl
+# Expor porta 80
+EXPOSE 80
 
-# Create app user for security
-RUN addgroup -g 1001 -S nodejs && adduser -S svelte -u 1001
-
-# Set working directory
-WORKDIR /app
-
-# Copy package files
-COPY package*.json ./
-
-# Install production dependencies only (exclude devDependencies)
-RUN npm ci --omit=dev --no-audit --no-fund && npm cache clean --force
-
-# Copy built application from builder stage
-COPY --from=builder --chown=svelte:nodejs /app/build ./build
-COPY --from=builder --chown=svelte:nodejs /app/package.json ./
-
-# Copy static files if they exist
-COPY --from=builder --chown=svelte:nodejs /app/static ./static
-
-# Set environment variables
+# Definir variáveis de ambiente
 ENV NODE_ENV=production
 ENV PORT=80
 ENV HOST=0.0.0.0
 
-# Switch to non-root user
-USER svelte
-
-# Expose port
-EXPOSE 80
-
-# Health check
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD curl -f http://localhost:80/ || exit 1
-
-# Start the application with dumb-init for proper signal handling
-ENTRYPOINT ["dumb-init", "--"]
-CMD ["sh", "-c", "PORT=80 HOST=0.0.0.0 node build"]
+# Comando de inicialização
+CMD ["./start.sh"]

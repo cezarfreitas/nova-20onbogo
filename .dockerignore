@@ -1,52 +1,30 @@
-# Dependencies
 node_modules
 npm-debug.log*
 .npm
-
-# Build outputs (will be built inside container)
 build
 .svelte-kit
-
-# Development files
 .vscode
 .git
 .gitignore
-README.md
 *.md
-
-# Environment files
 .env*
 !.env.production.template
-
-# Testing
 coverage
 .nyc_output
-
-# Logs
 *.log
-
-# Runtime data
 pids
 *.pid
 *.seed
-
-# Cache
 .cache
 .temp
 .tmp
-
-# OS generated files
 .DS_Store
 Thumbs.db
-
-# IDE files
 .idea
 *.swp
 *.swo
-
-# Other Docker files (avoid confusion)
-Dockerfile.fixed
-Dockerfile.simple
-docker-compose.yml
-start.js
 server-port80.js
+start.js
+Dockerfile.*
+docker-compose*.yml
+deploy*.sh
