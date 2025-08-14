@@ -28,6 +28,13 @@ cp .env.production.template .env.production
 npm install
 ```
 
+### 4. Teste o build (Opcional)
+```bash
+# Testa diferentes estratégias de build
+chmod +x build-test.sh
+./build-test.sh
+```
+
 ## 🐳 Deploy com Docker
 
 ### Método 1: Script Automático (Recomendado)
